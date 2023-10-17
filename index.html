@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/214d584b7e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1>
+            <span>W</span>
+            <span>e</span>
+            <span>l</span>
+            <span>c</span>
+            <span>o</span>
+            <span>m</span>
+            <span>e</span>
+            <span>T</span>
+            <span>o</span>
+            <span>M</span>
+            <span>y</span>
+            <span>P</span>
+            <span>o</span>
+            <span>r</span>
+            <span>t</span>
+            <span>f</span>
+            <span>o</span>
+            <span>l</span>
+            <span>i</span>
+            <span>o</span>
+        </h1>
+        <br>
+        <br>
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sk">Skills</a></li>
+                    <li><a href="#">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Web/APP developer</p>
+            <h3>Hi, I am <span>Rajan</span> From India</h3>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="about.jpg">
+                </div>
+                <div class="about-col2">
+                    <P class="subtitle">About Me
+                    </P>
+                    <p>Hey there! I'm a computer science student with a passion for creative problem-solving and content
+                        creation. While I wouldn't call myself a programming expert, I'm still learning and always eager
+                        to learn more. I enjoy turning ideas into code and have a knack for crafting engaging written
+                        material. I'm also keen on user-friendly design and pay close attention to detail. Beyond
+                        coding, you can often find me immersed in content creation, whether it's blog posts, articles,
+                        or creative pieces. I'm enthusiastic about exploring new technologies and open to collaborations
+                        in building innovative solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Leadership</span><br>Hold and lead the team</li>
+                            <li><span>Web development</span><br>Frontend and Backend development</li>
+                            <li><span>App development</span><br>Developing android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span></span><br>Do not have any experince for now
+                                <br>But looking forward for an opportunity in filed of App/Web development
+                            </li>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>Completed Matriculation form Delhi Public School,Kadirabad</li>
+                            <li><span>2018-2020</span><br>Completed HS from St.Paul High School</li>
+                            <li><span>2021-Till date</span><br>Pursuing B.tech from Bengal Institute of technology
+                                <br>(Currently in 5th sem)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skills -->
+    <div id="sk">
+        <div class="skill">
+            <div class="main-text">
+                <span id="sp">Technical and Professional</span>
+                <h2>My Skills</h2>
+                <div class="skill-titles">
+                    <div class="skill-links">
+                        <p>My Technical Skills</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-offset-3 col-md-6">
+                                    <h3 class="progress-title">HTML- 90%</h3>
+                                    <div class="progress red">
+                                        <div class="progress-bar" style="width: 90%;  background-color:#F51008;">
+                                        </div>
+                                    </div>
+
+                                    <h3 class="progress-title">CSS - 50%</h3>
+                                    <div class="progress green">
+                                        <div class="progress-bar" style="width: 50%;  background-color:#13D73E;">
+                                        </div>
+                                    </div>
+
+                                    <h3 class="progress-title">JavaScript - 80%</h3>
+                                    <div class="progress blue">
+                                        <div class="progress-bar" style="width:80%;  background-color:#0D47A1;">
+                                        </div>
+                                    </div>
+
+
+                                    <h3 class="progress-title">JAVA - 90%</h3>
+                                    <div class="progress yellow">
+                                        <div class="progress-bar" style="width:65%; background-color:#F0C808;">
+                                        </div>
+                                    </div>
+                                    <h3 class="progress-title">C - 65%</h3>
+                                    <div class="progress bg">
+                                        <div class="progress-bar" style="width:65%; background-color:#da450a;">
+                                        </div>
+                                    </div>
+                                    <h3 class="progress-title">PYTHON - 65%</h3>
+                                    <div class="progress bg">
+                                        <div class="progress-bar" style="width:65%; background-color:#da450a;">
+                                        </div>
+                                    </div>
+                                    <h3 class="progress-title">DSA - 65%</h3>
+                                    <div class="progress bg">
+                                        <div class="progress-bar" style="width:65%; background-color:#da450a;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-links">
+                        <p>My professional skills</p>
+                        <div class="container ccl">
+                            <div class="row">
+                                <div class="card">
+                                    <div class="box">
+                                        <div class="percent">
+                                            <svg>
+                                                <circle cx="70" cy="70" r="70"></circle>
+                                                <circle cx="70" cy="70" r="70"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <h2>80<span>%</span></h2>
+                                            </div>
+                                        </div>
+                                        <h2 class="text">Leadership</h2>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="box">
+                                        <div class="percent">
+                                            <svg>
+                                                <circle cx="70" cy="70" r="70"></circle>
+                                                <circle cx="70" cy="70" r="70"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <h2>90<span>%</span></h2>
+                                            </div>
+                                        </div>
+                                        <h2 class="text">Communication</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="card">
+                                    <div class="box">
+                                        <div class="percent">
+                                            <svg>
+                                                <circle cx="70" cy="70" r="70"></circle>
+                                                <circle cx="70" cy="70" r="70"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <h2>75<span>%</span></h2>
+                                            </div>
+                                        </div>
+                                        <h2 class="text">Creativity</h2>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="box">
+                                        <div class="percent">
+                                            <svg>
+                                                <circle cx="70" cy="70" r="70"></circle>
+                                                <circle cx="70" cy="70" r="70"></circle>
+                                            </svg>
+                                            <div class="number">
+                                                <h2>90<span>%</span></h2>
+                                            </div>
+                                        </div>
+                                        <h2 class="text">Team Work</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Contact@kumarrajan64751@gmail.com</p>
+                    <p><i class="fa-solid fa-phone fa-flip-horizontal"></i>8252544617</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100025086726882&mibextid=ZbWKwL"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rajan-kumar-272663290"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download>
+                        <button>Download CV</button>
+                    </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="E-mail" placeholder="Your email" required>
+                        <input type="text" name="Designation" placeholder="your designation">
+                        <textarea name="message" rows="10" placeholder="Your message"></textarea>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"></i> My website made with <i class="fa-solid fa-heart"></i>
+                by Rajan kumar</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxX05H8-tBTSv2f8gbevKhjvlnkp1pTRoRdfQ-8Z3KycVgmxgX-lhPgmBM9SWmmdoFw-g/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
