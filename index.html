@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Personal Portfolio website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/214d584b7e.js" crossorigin="anonymous"></script>
@@ -136,7 +135,7 @@
 
                                     <h3 class="progress-title">JAVA - 90%</h3>
                                     <div class="progress yellow">
-                                        <div class="progress-bar" style="width:65%; background-color:#F0C808;">
+                                        <div class="progress-bar" style="width:90%; background-color:#F0C808;">
                                         </div>
                                     </div>
                                     <h3 class="progress-title">C - 65%</h3>
@@ -149,9 +148,9 @@
                                         <div class="progress-bar" style="width:65%; background-color:#da450a;">
                                         </div>
                                     </div>
-                                    <h3 class="progress-title">DSA - 65%</h3>
+                                    <h3 class="progress-title">DSA - 70%</h3>
                                     <div class="progress bg">
-                                        <div class="progress-bar" style="width:65%; background-color:#da450a;">
+                                        <div class="progress-bar" style="width:70%; background-color:#da450a;">
                                         </div>
                                     </div>
                                 </div>
@@ -200,7 +199,7 @@
                                                 <circle cx="70" cy="70" r="70"></circle>
                                             </svg>
                                             <div class="number">
-                                                <h2>75<span>%</span></h2>
+                                                <h2>80<span>%</span></h2>
                                             </div>
                                         </div>
                                         <h2 class="text">Creativity</h2>
@@ -238,7 +237,8 @@
                     <div class="social-icons">
                         <a href="https://www.facebook.com/profile.php?id=100025086726882&mibextid=ZbWKwL"><i
                                 class="fa-brands fa-facebook"></i></a>
-                        <a href="https://instagram.com/rajankumar7077?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://instagram.com/rajankumar7077?igshid=OGQ5ZDc2ODk2ZA=="><i
+                                class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/rajan-kumar-272663290"><i
                                 class="fa-brands fa-linkedin"></i></a>
                     </div>
@@ -247,7 +247,7 @@
                     </a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
+                    <form name="submit-to-google-sheet" id="form-reset">
                         <input type="text" name="Name" placeholder="Enter your name" required>
                         <input type="email" name="E-mail" placeholder="Your email" required>
                         <input type="text" name="Designation" placeholder="your designation">
@@ -296,6 +296,14 @@
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        const form1 = document.getElementById('contactForm');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); 
+            form.reset();
         })
     </script>
 </body>
